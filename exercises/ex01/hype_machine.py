@@ -1,4 +1,4 @@
-"""Hyping up the author"""
+"""Hyping up the author."""
 
 __author__ = "730401304"
 

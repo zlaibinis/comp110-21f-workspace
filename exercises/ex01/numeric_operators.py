@@ -1,4 +1,4 @@
-"""Practive with numeric operators, type conversions, and string concatenation"""
+"""Practive with numeric operators, type conversions, and string concatenation."""
 
 __author__ = "730401304"
 

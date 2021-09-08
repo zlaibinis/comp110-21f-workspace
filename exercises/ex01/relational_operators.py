@@ -1,4 +1,4 @@
-"""Comparing two variables with boolean type"""
+"""Comparing two variables with boolean type."""
 
 __author__ = "730401304"
 

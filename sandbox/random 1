@@ -1,1 +1,1 @@
-print(obunga)
+a: str = "qwerty"
