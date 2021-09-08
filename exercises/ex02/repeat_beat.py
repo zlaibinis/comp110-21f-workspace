@@ -9,7 +9,7 @@ beat_count: int = int(input("How many times do you want to repeat it? "))
 i: str = ""
 
 
-if beat_count < 0:
+if beat_count <= 0:
     print("No beat...")
 else:
     while beat_count > 0:
