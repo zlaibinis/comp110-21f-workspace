@@ -3,14 +3,15 @@
 __author__ = "730401304"
 
 player: str = ""
+points: int = 0
 
 
 def main() -> None:
     """The programs entrypoint."""
-    global points
-    points = 0
     greet()
-    print(player)
+    global points
+    points = 1
+    print(f"Well welcome to the crew {player}!!!")
 
 
 def greet() -> None:
