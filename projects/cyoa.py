@@ -10,7 +10,7 @@ def main() -> None:
     """The programs entrypoint."""
     greet()
     global points
-    points = points
+    points = points + 1
     print(f"Well welcome to the crew {player}!!!")
     print("Where would you like to go next sailor? You have 3 options. Option 1, you can be captain on the Black Pearl and choose how to deal with trouble over the horizon while gaining Adventure Points. Option 2, you can wager your Adventure Points for double or nothing on a coin toss against Davy Jones. And option 3, you can end the experience right now and walk away with your adventure points. ")
     x: int = int(input("Pick an option by typing either 1, 2 or 3. "))
@@ -36,6 +36,7 @@ def option_1() -> None:
 
 def option_2(points: int) -> int:
     print(f"so you chose to gamble your points eh {player}? Best of luck to ye. ")
+
 
 if __name__ == '__main__':
     main()
