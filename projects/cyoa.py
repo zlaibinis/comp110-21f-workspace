@@ -2,6 +2,7 @@
 
 __author__ = "730401304"
 
+
 player: str = ""
 points: int = 0
 
@@ -16,10 +17,13 @@ def main() -> None:
     x: int = int(input("Pick an option by typing either 1, 2 or 3. "))
     if x == 3:
         print(f"Goodbye {player}, you have earned {points} Adventure Points! Safe Travels.")
-    if x == 1:
-        option_1()
-    if x == 2:
-        option_2(points)
+        return
+    else:
+        if x == 1:
+            option_1()
+        else:
+            if x == 2:
+                option_2(x)
 
 
 def greet() -> None:
@@ -34,8 +38,19 @@ def option_1() -> None:
     print(f"Youve been promoted to captain aboard the Black Pearl, {player}!")
 
 
-def option_2(points: int) -> int:
+def option_2(x: int) -> int:
     print(f"so you chose to gamble your points eh {player}? Best of luck to ye. ")
+    from random import randint
+    global points
+    print("You will pick a side of the golden Aztec coin.")
+    side: int = int(input("Enter 1 for heads or 2 for Tails. "))
+    coin: int = randint(1,2)
+    if side == coin:
+        points *= 2
+    else:
+        points = 0
+    print(points)
+    return points
 
 
 if __name__ == '__main__':
